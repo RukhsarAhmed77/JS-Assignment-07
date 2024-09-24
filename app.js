@@ -1,12 +1,11 @@
-var input = prompt("Enter a palindrome:");
 
-var reversedstr = '';
+//Assignment 07
 
-for (var i = input.length - 1; i >= 0; i--) {
-  reversedstr += input[i];
-}
+var userInput = prompt("Enter a palindrome:");
 
-if (input === reversedstr) {
+var reversedStr = userInput.split('').reverse().join('');
+
+if (userInput === reversedStr) {
     console.log('It is a palindrome');
 } else {
     console.log('It is not a palindrome');
